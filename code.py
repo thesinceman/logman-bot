@@ -19,5 +19,5 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 load_dotenv()
-TOKEN = os.getenv('OTk0MTkxMjI1MTQzOTU5NjU0.G1AGAh.xaworGgwVCm4FfUjNWhjjajpB8XVmJoAe6cizQ')
+TOKEN = os.getenv('OTk0MTkxMjI1MTQzOTU5NjU0.G4UOiU.8bOpNdPF1No_qBSRw9iTl1DUIfOnNt-LOh4oUk')
 
