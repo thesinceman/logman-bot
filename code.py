@@ -1,4 +1,5 @@
 from multiprocessing import process
+import os
 from tabnanny import process_tokens
 import discord
 
@@ -17,3 +18,4 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
 client.run(process.env.TOKEN)
+TOKEN = os.getenv('DISCORD_TOKEN')
