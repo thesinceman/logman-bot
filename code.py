@@ -18,6 +18,5 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
 client.run(process.env.TOKEN)
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+
 
