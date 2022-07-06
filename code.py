@@ -1,3 +1,5 @@
+from multiprocessing import process
+from tabnanny import process_tokens
 import discord
 
 client = discord.Client()
@@ -14,4 +16,4 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-client.run('OTk0MTkxMjI1MTQzOTU5NjU0.GU8vBj.Q5-oYi9j7DOvHZjqZRG3_T7DMLfIWz26R8FfDM')
+client.run(process.env.TOKEN)
