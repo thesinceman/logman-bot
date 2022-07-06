@@ -6,6 +6,7 @@ discord.py==1.7.3
 idna==3.3
 multidict==6.0.2
 pip==20.3.4
+python-dotenv==0.20.0
 setuptools==52.0.0
 typing-extensions==4.3.0
 wheel==0.34.2

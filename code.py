@@ -3,6 +3,7 @@ import os
 from tabnanny import process_tokens
 import discord
 from dotenv import load_dotenv
+load_dotenv()
 client = discord.Client()
 
 @client.event
@@ -16,7 +17,7 @@ async def on_message(message):
 
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
-
-client.run(process.env.TOKEN)
+TOKEN = os.getenv("TOKEN")
+client.run('TOKEN')
 
 
